@@ -1,6 +1,6 @@
 package hw2;
 
-public class p3 {
+public class P3 {
 	public static void main(String[] args) {
 		char target = 'F';
 		for(int i = 0 ; i <= target-'A'; i++) {

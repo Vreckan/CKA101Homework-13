@@ -1,5 +1,5 @@
 package hw2;
-public class p2 {
+public class P2 {
 	public static void main(String[] args) {
 		int num = 49;
 		int count = 0;
