@@ -28,8 +28,8 @@ public class Q6 {
 					num[number]++;
 		}
 		
-		System.out.print(Arrays.toString(num));
-		for(int i = 0 ; i <= scores[0].length;i++)
+//		System.out.print(Arrays.toString(num));
+		for(int i = 0 ; i < scores[0].length;i++)
 			System.out.println(i+1+"號得分最高"+num[i]+"次");//i 為index
 	}
 }
