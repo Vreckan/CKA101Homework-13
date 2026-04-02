@@ -12,7 +12,7 @@ public class Q2 {
 		while (sc.hasNext()) {
 			int guess = sc.nextInt();
 			if(guess<0||guess>100) {
-				System.out.println("pleas input 0~100");
+				System.out.println("please input 0~100");
 				continue;
 			}
 			if (guess > ans) {
