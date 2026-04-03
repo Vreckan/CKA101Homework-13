@@ -2,16 +2,18 @@ package hw4;
 
 public class Q3 {
 	public static void main(String[] args) {
-		String str="{“mercury”, “venus”, “earth”, “mars”, “jupiter”, “saturn”, “uranus”, “neptune”}";
+		String [] str={"mercury", "venus", "earth", "mars", "jupiter", "saturn", "uranus", "neptune"};
 		
 		int count = 0;
 		
-		for(int i=0; i<str.length();i++) {
-			if(str.charAt(i)=='a'||str.charAt(i)=='e'||str.charAt(i)=='i'
-					||str.charAt(i)=='o'||str.charAt(i)=='u')
-				count++;
+		for(int i=0; i<str.length;i++) {
+			for(int j=0; j<str[i].length();j++) {
+				char target = str[i].charAt(j);
+				if(target=='a'||target=='e'||target=='i'||target=='o'||target=='u')
+					count++;
+			}
 		}
 		
-		System.out.println(count);
+		System.out.println(count+"個母音	");
 	}
 }
