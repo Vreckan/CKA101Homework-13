@@ -7,11 +7,10 @@ public class Q5 {
 		for (int i = 0; i < 8; i++) {
 			System.out.print(code[i]);
 		}
-		String pool = "0123456789abcdefghijklmnopqrstuvwxyz";
-		System.out.println(pool.charAt(36));
 	}
 
 	public char[] getAuthCode() {
+		//or String pool = "0123456789abcdefghijklmnopqrstuvwxyzABC";
 		int random;
 		char[] code = new char[8];
 		
