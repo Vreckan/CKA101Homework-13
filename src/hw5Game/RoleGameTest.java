@@ -10,11 +10,13 @@ public class RoleGameTest {
 		saber.setattack(new AttackSword());
 		saber.run();
 		saber.attack();
+		saber.defend();
 		
 		archer.setmove(new Run());
 		archer.setattack(new AttackArrow());
 		archer.setdefend(new Defend());
 		archer.run();
 		archer.attack();
+		archer.defend();
 	}
 }
