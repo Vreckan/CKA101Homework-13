@@ -1,7 +1,7 @@
 package hw5Game;
 
 
-public abstract class Hero {
+public class Hero {
 	// 省略 getter/setter...
 	private String name;
 	private int level;
