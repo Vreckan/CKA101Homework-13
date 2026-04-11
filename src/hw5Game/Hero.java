@@ -44,8 +44,4 @@ public abstract class Hero {
 	public String getName() {
 		return name;
 	}
-	
-	public void atk() {
-		System.out.println("技能 - 大火球術");
-	}
 }

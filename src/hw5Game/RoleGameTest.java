@@ -31,8 +31,7 @@ public class RoleGameTest {
 			else if (HeroArray[i] instanceof SwordMan)
 				((SwordMan) HeroArray[i]).skillSword();
 			else if (HeroArray[i] instanceof PriestMan)
-				((PriestMan) HeroArray[i]).skillMagic(); 
-
+				((PriestMan) HeroArray[i]).skillMagic();
 			HeroArray[i].defend();
 			System.out.println();
 		}
