@@ -1,7 +1,7 @@
 package hw5Game;
 
 
-public class Hero {
+public abstract class Hero {
 	// 省略 getter/setter...
 	private String name;
 	private int level;
@@ -43,5 +43,9 @@ public class Hero {
 	}
 	public String getName() {
 		return name;
+	}
+	
+	public void atk() {
+		System.out.println("技能 - 大火球術");
 	}
 }
