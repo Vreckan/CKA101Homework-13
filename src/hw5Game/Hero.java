@@ -41,4 +41,7 @@ public class Hero {
 	protected void attack() {
 		attack.attack();
 	}
+	public String getName() {
+		return name;
+	}
 }
