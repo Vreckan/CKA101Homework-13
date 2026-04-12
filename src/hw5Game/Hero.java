@@ -33,13 +33,25 @@ public abstract class Hero {
 		
 	}
 	protected void run() {
-		run.run();
+		if(run != null) {
+			run.run();
+		}else {
+			System.out.println(getName() + " 尚未設定跑步方式");
+		}
 	}
 	protected void defend() {
-		defend.defend();
+		if(defend != null){
+			defend.defend();
+	    }else{
+	        System.out.println(getName() + " 尚未設定防禦方式");
+	    }
 	}
 	protected void attack() {
-		attack.attack();
+		if(attack != null) {
+			attack.attack();
+		}else {
+			System.out.println(getName() + " 尚未設定攻擊方式");
+		}
 	}
 	public String getName() {
 		return name;

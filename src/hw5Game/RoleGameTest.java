@@ -39,7 +39,7 @@ public class RoleGameTest {
 			else if (hero instanceof PriestMan p)
 				p.skillMagic();
 			
-			//new → 呼叫建構子 → super(message) → Exception 存 message → throw 丟出去 → catch 接住 → getMessage()
+			//無論如何都進行防禦
 			try {
 				hero.setdefend(new ShieldDefend());
 			}catch(RoleGameException e){
