@@ -28,7 +28,7 @@ public abstract class Hero {
 		this.run=run;
 	}
 
-	public void setdefend(IDefendBehavior defend) {
+	public void setdefend (IDefendBehavior defend) throws RoleGameException{
 		this.defend=defend;
 		
 	}

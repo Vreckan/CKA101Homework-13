@@ -20,18 +20,38 @@ public class RoleGameTest {
 
 		for (int i = 0; i < HeroArray.length; i++) {
 			System.out.print(HeroArray[i].getName() + " ");
-
-			HeroArray[i].setdefend(new Defend());
-			HeroArray[i].setmove(new Run());
-			HeroArray[i].run();
-			HeroArray[i].attack();
-			if (HeroArray[i] instanceof ArrowMan )
-				((ArrowMan) HeroArray[i]).skillArrow();// 型別降轉使用子類別skill
-			else if (HeroArray[i] instanceof SwordMan)
-				((SwordMan) HeroArray[i]).skillSword();
-			else if (HeroArray[i] instanceof PriestMan)
-				((PriestMan) HeroArray[i]).skillMagic();
-			HeroArray[i].defend();
+			
+			Hero hero = HeroArray[i];
+			
+			hero.setmove(new Run());
+			hero.run();
+			hero.attack();
+		    // 故意不 override skill，改用 instanceof + 向下轉型展示子類別特有技能
+			if (hero instanceof ArrowMan)
+				((ArrowMan)hero).skillArrow();// 型別降轉使用子類別skill
+			
+			// 另一種寫法當 hero 是 SwordMan 時，instanceof 在判斷成立的同時，
+			// 會自動完成安全的向下轉型，並將結果指派給變數 s（JDK16 pattern matching）
+			// s 是已轉型完成的 SwordMan 參考變數，可直接呼叫子類別方法
+			
+			else if (hero instanceof SwordMan s)
+			    s.skillSword();
+			else if (hero instanceof PriestMan p)
+				p.skillMagic();
+			
+			//new → 呼叫建構子 → super(message) → Exception 存 message → throw 丟出去 → catch 接住 → getMessage()
+			try {
+				hero.setdefend(new ShieldDefend());
+			}catch(RoleGameException e){
+				e.printStackTrace();
+				try {
+					hero.setdefend(new Defend());
+				}catch(RoleGameException e2){
+					e2.printStackTrace();
+				}
+			}finally{
+				hero.defend();
+			}
 			System.out.println();
 		}
 	}

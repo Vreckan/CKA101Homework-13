@@ -1,7 +1,7 @@
 package hw5Game;
 
 public class Defend implements IDefendBehavior{
-	public void defend() {
-		System.out.println("使用盾牌格擋");
+	public void  defend() {
+		System.out.println("進行一般防禦");
 	}
 }
