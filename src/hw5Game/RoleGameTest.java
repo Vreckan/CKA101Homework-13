@@ -25,8 +25,7 @@ public class RoleGameTest {
 			HeroArray[i].setmove(new Run());
 			HeroArray[i].run();
 			HeroArray[i].attack();
-
-			if (HeroArray[i] instanceof ArrowMan)
+			if (HeroArray[i] instanceof ArrowMan )
 				((ArrowMan) HeroArray[i]).skillArrow();// 型別降轉使用子類別skill
 			else if (HeroArray[i] instanceof SwordMan)
 				((SwordMan) HeroArray[i]).skillSword();
