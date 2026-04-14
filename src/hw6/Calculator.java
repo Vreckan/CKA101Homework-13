@@ -22,10 +22,10 @@ public class Calculator {
 		this.y = y;
 	}
 
-	Calculator() {
-
-	}
-
+//	Calculator() {
+//
+//	}這個物件允不允許處於未初始化狀態 所以不給無參數建構子
+	
 	public int powerXY() {
 		return (int) (Math.pow(x, y));
 	}
