@@ -14,7 +14,7 @@ public class CalTest {
 			int x = readInt(sc,"請輸入x變數");
 			if(x==EXIT) break;
 			
-			int y = readInt(sc,"請輸入x變數");
+			int y = readInt(sc,"請輸入y變數");
 			if(y==EXIT) break;
 			
 			try {
