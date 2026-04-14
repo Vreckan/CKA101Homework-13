@@ -1,5 +1,6 @@
 package hw5Game;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -18,11 +19,12 @@ public class CreatAltFile {
             }
 
             FileWriter fw = new FileWriter(file, false); // false = 覆蓋重寫
-            fw.write("4,波羅莫,swordman,1,0\n");
-            fw.write("5,羅賓漢,arrowman,1,0\n");
-            fw.write("6,梅林,priest,1,0\n");
-            fw.close();
-
+            BufferedWriter bw = new BufferedWriter(fw); //加入緩衝
+            bw.write("4,波羅莫,swordman,1,0\n");
+            bw.write("5,羅賓漢,arrowman,1,0\n");
+            bw.write("6,梅林,priest,1,0\n");
+            bw.close();
+            
             System.out.println("角色資料寫入完成");
 
         } catch (IOException e) {
