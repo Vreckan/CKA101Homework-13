@@ -3,9 +3,10 @@ package hw6;
 import java.util.Scanner;
 
 public class CalTest {
-	final static int EXIT= 9527;
+//	final static int EXIT= 9527;
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		final int EXIT= 9527;
 		
 		System.out.println("如要離開請輸入"+EXIT);
 
@@ -30,7 +31,7 @@ public class CalTest {
 	public static int readInt(Scanner sc,String str) {
 		while(true) {
 			System.out.println(str);
-			if(sc.hasNext()) {
+			if(sc.hasNextInt()) {
 				return sc.nextInt();
 			}else {
 				System.out.println("格式不正確　：　這不是整數");
