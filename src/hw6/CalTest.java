@@ -33,12 +33,12 @@ public class CalTest {
 					break;
 			}
 
-//			try {
-				Calculator obj1 = new Calculator();
+			try {
+				Calculator obj1 = new Calculator(x, y);
 				System.out.println(obj1.powerXY());
-//			} catch (CalException e) {
-//				e.printStackTrace();
-//			}
+			} catch (CalException e) {
+				e.printStackTrace();
+			}
 
 		}
 		System.out.println("9527終止");
