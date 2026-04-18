@@ -1,17 +1,18 @@
 package hw7;
 
-import java.io.Serializable;
-
-public class Dog implements Serializable , Speakable{
+public class Dog extends Animal implements Speakable{
 	private static final long serialVersionUID = 1L;
 	
-	private String name;
-	
 	public Dog(String name) {
-		this.name = name;
+		super(name);
 	}
 	
 	public void speak() {
-		System.out.println("This is Dog " + name + " speaking.");
+		System.out.println("This is Dog " + super.getName() + " speaking.");
 	}
+	
+	public void sleep() {
+		System.out.println("This is Dog " + super.getName() + " sleeping!");
+	}
+	
 }
