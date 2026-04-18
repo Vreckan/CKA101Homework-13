@@ -3,3 +3,10 @@
 .settings/
 bin/
 .DS_Store
+.metadata/
+.mylyn/
+.plugins/
+.lock
+.lock_info
+.log
+version.ini
