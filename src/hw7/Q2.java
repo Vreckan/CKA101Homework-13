@@ -28,6 +28,7 @@
 			while (num.size() < 10) { //當裡面內容<10個 1~1000不重複的整數
 				num.add((int) (Math.random() * 1000 + 1));
 			}
+			
 			System.out.println(num);// // 印出 Set num 的所有元素，Set 的 toString() 會自動補上 [] 和 ,
 	
 			String path = System.getProperty("user.dir"); // 透過 static 方法 JVM 的工作目錄（程式目前執行的根目錄）
