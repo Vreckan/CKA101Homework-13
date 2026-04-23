@@ -47,7 +47,7 @@ public class Q1 {
 		
 		while(objs2.hasNext()) {
 			Object o = objs2.next();//
-			if(!(o instanceof Number)) {//o是objs2的當前物件如果非Number就移除objs2
+			if(!(o instanceof Number )) {//o是objs2的當前物件如果非Number就移除objs2
 				objs2.remove();
 				
 			}

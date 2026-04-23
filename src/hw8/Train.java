@@ -97,6 +97,9 @@ public class Train implements Comparable<Train> {
 	
 	@Override
 	public int compareTo(Train other) {
-		return other.number - this.number; // 由大到小(右邊或左邊)
+		return other.number - this.number;
+		// other - this：由大到小
+		// this - other：由小到大
+		// compareTo() 回傳負數，this 排前面；回傳正數，this 排後面；0 表示相等
 	}
 }

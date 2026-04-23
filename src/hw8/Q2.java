@@ -51,5 +51,6 @@ public class Q2 {
 		for (Train t : tSs) {
 			System.out.println(t);
 		}
+		
 	}
 }
